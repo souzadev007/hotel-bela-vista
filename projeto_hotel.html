@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Bela Vista Palace</title>
+    <script src="https://kit.fontawesome.com/432120de6c.js" crossorigin="anonymous"></script>
+    <style>
+        
+        img {
+            
+            max-width: 100%;
+            height: auto;
+        }
+        .room img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .galery {
+           display: flex;
+           justify-content: space-between;
+           
+            
+        }
+        
+        header {
+            text-align: center;
+            height: 50%;
+            }
+
+        nav {
+            text-align: center;
+            
+        }
+
+        nav a{
+            font-size: 30px;
+            margin: 0 30px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #e4fcff;
+            text-align: left;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+            /* 12 colunas (100% dividido por 12 = 8.33%) */
+
+        .col-1  { width: 8.33%; }
+        .col-2  { width: 16.66%; }
+        .col-3  { width: 25%; }
+        .col-4  { width: 33.33%; }
+        .col-5  { width: 41.66%; }
+        .col-6  { width: 50%; }
+        .col-7  { width: 58.33%; }
+        .col-8  { width: 66.66%; }
+        .col-9  { width: 75%; }
+        .col-10 { width: 83.33%; }
+        .col-11 { width: 91.66%; }
+        .col-12 { width: 100%; }
+       
+       
+        /*responsivo celular*/
+        @media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+         <img src="imagen_logo.png" alt="logo do hotel">
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#Quartos">Quartos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#Contato">Contato</a>
+    </nav>
+
+    <hr>
+     <section id="inicio"> 
+         <h2>Bem-vindo</h2>
+             <p>Conforto e luxo À beira-mar</p>
+    </section>
+   
+
+    <section id="Quartos">
+       <h2>Quartos</h2>
+           <h3>Quarto Standard</h3>
+    <div class="room">  
+            <div class="container">
+               <img src="imagens/quarto_stan.avif" alt="">
+                    <ul>
+                        <li>30 m²</li>
+                        <li>vista para a praia</li>
+                        <li>1 quarto</li>
+                        <li> <i class="fa-solid fa-people-group"></i> Acomoda 3 pessoas</li>
+                        <li>Pague em até 12x sem juros</li>
+                        <li> <i class="fa-solid fa-bed"></i> 1 cama Queen e 1 cama de solteiro</li>
+                        <li> <i class="fa-solid fa-wifi"></i> Wi-fi grátis</li>
+                    </ul>
+            </div>
+               <br>
+               <br>
+           <h3>Suíte Master</h3>
+           <div class="container">
+             <img src="imagens/suite_s.avif" alt="">
+                    <ul>
+                        <li>26 m²</li>
+                        <li> 1 quarto</li>
+                        <li> <i class="fa-solid fa-people-group"></i> Acomoda 3 pessoas</li>
+                        <li>Pague em até 12x sem juros</li>
+                        <li> <i class="fa-solid fa-bed"></i> 1 cama Queen</li>
+                        <li> <i class="fa-solid fa-wifi"></i> Wi-fi grátis</li>
+                    </ul>
+           </div>
+    </section>
+    </div>
+        
+
+    <section id="galeria">
+       <h2>Galeria</h2>
+    <div class="container galery">
+        <img src="imagens/imagem_galeria1.webp" alt="" width="100px" height="300px">
+        <img src="imagens/galeria_2.webp" alt="" width="150px" height="300px">
+        <img src="imagens/galeria_3.webp" alt="" width="150px" height="300px">
+    </div>  
+        <h2>Sobre esta propriedade</h2>
+        <p>Esta pousada à beira-mar possui um restaurante e fica perto da Praia....</p>
+        <ul>
+            <li> <i class="fa-solid fa-umbrella-beach"></i> na praia</li>
+            <li> <i class="fa-solid fa-utensils"></i> restaurante</li>
+            <li> <i class="fa-solid fa-wifi"></i> Wi-fi grátis</li>
+            <li> <i class="fa-solid fa-mug-saucer"></i> Buffet de café da manhã incluso</li>
+            <li> <i class="fa-solid fa-spa"></i> Serviço de massagem disponível no quarto</li>
+            <li> <i class="fa-solid fa-campground"></i> Jardim</li>
+        </ul>
+      </section>
+    <footer>
+        <section id="Contato">
+      <h2>Contato</h2>
+          <p>+55 47 99265-9683</p>
+          <p>pietrossilvestre@gmail.com</p>
+
+    </section>
+    </footer>
+    
+</body>
+</html>
